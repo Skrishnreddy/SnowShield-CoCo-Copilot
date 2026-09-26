@@ -5,12 +5,14 @@
 [![Hackathon](https://img.shields.io/badge/Snowflake_CoCo_Hackathon-GCC_Edition_2026-orange)](https://hack2skill.com)
 [![Challenge Track](https://img.shields.io/badge/Track-Risk%2C_Fraud_%26_Regulatory_Copilot-red)](#)
 [![Live Prototype](https://img.shields.io/badge/Live_Prototype-Streamlit_App-success?logo=streamlit)](https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/)
+[![Streamlit in Snowflake](https://img.shields.io/badge/Streamlit_in_Snowflake-Native_SiS_App-29B5E8?logo=snowflake)](https://app.snowflake.com/us-east-1/cbc79236/#/streamlit-apps/SNOWSHIELD_DB.RISK_INTELLIGENCE.SNOWSHIELD_COPILOT)
 [![Demo Video](https://img.shields.io/badge/Demo_Video-Watch_MP4-purple?logo=youtube)](https://github.com/Skrishnreddy/SnowShield-CoCo-Copilot/raw/main/SnowShield_Demo_Video.mp4)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 > **Snowflake CoCo CLI Hackathon (GCC Edition 2026)**  
 > **Challenge:** Risk, Fraud and Regulatory Intelligence Copilot  
-> **Live Deployed App:** [https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/](https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/)  
+> **Native Streamlit in Snowflake (SiS):** `SNOWSHIELD_DB.RISK_INTELLIGENCE.SNOWSHIELD_COPILOT` (Running on `COMPUTE_WH` using $400 AI Data Cloud Credits)  
+> **Public Web App:** [https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/](https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/)  
 > **Demo Video (MP4):** [Download / Watch Demo Video](https://github.com/Skrishnreddy/SnowShield-CoCo-Copilot/raw/main/SnowShield_Demo_Video.mp4)  
 > **Built by:** Team PandaShield / SnowShield  
 
