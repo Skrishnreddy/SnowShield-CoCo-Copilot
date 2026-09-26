@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import json
@@ -50,7 +51,11 @@ st.markdown("""
 copilot = SnowShieldCortexCopilot()
 
 # Sidebar
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Inc._logo.svg", width=140)
+logo_path = os.path.join(os.path.dirname(__file__), "snowflake_logo.png")
+if os.path.exists(logo_path):
+    st.sidebar.image(logo_path, width=200)
+else:
+    st.sidebar.markdown("## ❄️ **SNOWFLAKE**", unsafe_allow_html=True)
 st.sidebar.title("SnowShield CoCo")
 st.sidebar.caption("Autonomous Risk & Regulatory Intelligence Copilot")
 st.sidebar.markdown("---")
