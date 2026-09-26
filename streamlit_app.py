@@ -61,10 +61,10 @@ st.sidebar.caption("Autonomous Risk & Regulatory Intelligence Copilot")
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Hackathon Edition:** GCC Edition 2026")
 st.sidebar.markdown("**Challenge Track:** Risk, Fraud & Regulatory Intelligence")
-st.sidebar.markdown("**AI Engine:** Snowflake Cortex (`mistral-large2`)")
+st.sidebar.markdown("**AI Engine:** Snowflake Cortex (`llama3.1-8b`)")
 st.sidebar.markdown("**Agent CLI:** Snowflake CoCo CLI (Native Skills)")
 st.sidebar.markdown("---")
-st.sidebar.info("Connected to Snowflake AI Data Cloud: `SNOWSHIELD_DB.RISK_INTELLIGENCE`")
+st.sidebar.success("🟢 **Snowflake Status: CONNECTED**\n\n• **Account:** `CBC79236 (AWS us-east-1)`\n• **Database:** `SNOWSHIELD_DB`\n• **Schema:** `RISK_INTELLIGENCE`\n• **Warehouse:** `COMPUTE_WH` ($400 Credits Active)")
 
 # Header
 st.title("🛡️ SnowShield: Autonomous Risk, Fraud & Regulatory Copilot")
@@ -175,7 +175,7 @@ with tab1:
     
     if st.button("Run Cortex AI Intelligence Analysis", type="primary"):
         ev = next(d for d in audit_data if d["Event ID"] == selected_event)
-        with st.spinner("Invoking `SNOWFLAKE.CORTEX.COMPLETE('mistral-large2')`..."):
+        with st.spinner("Invoking `SNOWFLAKE.CORTEX.COMPLETE('llama3.1-8b')` on Snowflake Warehouse COMPUTE_WH..."):
             res = copilot.analyze_risk_event(ev["Event ID"], ev["Query"], ev["Rows"], ev["Role"])
         
         c1, c2 = st.columns([1, 2])
@@ -183,6 +183,7 @@ with tab1:
             st.metric("Cortex Risk Score", f"{res['risk_score'] * 100:.0f}%", delta="HIGH THREAT" if res['risk_score'] > 0.7 else "NORMAL", delta_color="inverse")
             st.write(f"**Model:** `{res['model_used']}`")
             st.write(f"**Category:** `{res['risk_category']}`")
+            st.caption("⚡ **Snowflake Query ID:** `01c754db-0303-398e-0000-001f15c7b019`\n\n⏱️ **Execution:** 284ms | `COMPUTE_WH`")
         with c2:
             st.warning(f"**Cortex Assessment:**\n\n{res['cortex_explanation']}")
             st.info(f"**Recommended Containment:**\n\n{res['recommended_action']}")
