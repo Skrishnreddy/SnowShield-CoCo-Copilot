@@ -4,10 +4,12 @@
 [![Snowflake Cortex AI](https://img.shields.io/badge/Snowflake-Cortex_AI-blue?logo=snowflake)](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions)
 [![Hackathon](https://img.shields.io/badge/Snowflake_CoCo_Hackathon-GCC_Edition_2026-orange)](https://hack2skill.com)
 [![Challenge Track](https://img.shields.io/badge/Track-Risk%2C_Fraud_%26_Regulatory_Copilot-red)](#)
+[![Live Prototype](https://img.shields.io/badge/Live_Prototype-Streamlit_App-success?logo=streamlit)](https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 > **Snowflake CoCo CLI Hackathon (GCC Edition 2026)**  
 > **Challenge:** Risk, Fraud and Regulatory Intelligence Copilot  
+> **Live Deployed App:** [https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/](https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/)  
 > **Built by:** Team PandaShield / SnowShield  
 
 ---
