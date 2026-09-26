@@ -235,22 +235,25 @@ page5.insert_text((52, 372), "100% of generated patches undergo AST syntax valid
 
 # Verification & Links (Right Column)
 draw_card(page5, (360, 195, 686, 380), bg_color=(0.95, 0.98, 1.0), border_color=(0.60, 0.78, 0.95))
-page5.insert_text((370, 214), "LIVE PROTOTYPE & SUBMISSION VERIFICATION", fontsize=9.5, fontname="Helvetica-Bold", color=DARK_BLUE)
+page5.insert_text((370, 212), "LIVE PROTOTYPE & SNOWFLAKE VERIFICATION", fontsize=9.5, fontname="Helvetica-Bold", color=DARK_BLUE)
 
-page5.insert_text((370, 234), "🌐 Live Deployed Prototype URL:", fontsize=8.8, fontname="Helvetica-Bold", color=SNOW_BLUE)
-page5.insert_text((375, 248), "https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/", fontsize=7.8, fontname="Helvetica-Bold", color=DARK_TEXT)
-page5.insert_text((375, 259), "• Interactive Risk Anomaly Inspector & Telemetry Analyzer", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
-page5.insert_text((375, 269), "• Regulatory Compliance Matrix (GDPR, PCI-DSS, SOC 2)", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
-page5.insert_text((375, 279), "• Conversational Snowflake Cortex AI Copilot", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
+page5.insert_text((370, 228), "• Native Streamlit in Snowflake (SiS) [Credits Active]:", fontsize=8.2, fontname="Helvetica-Bold", color=(0.1, 0.45, 0.8))
+page5.insert_text((375, 239), "SNOWSHIELD_DB.RISK_INTELLIGENCE.SNOWSHIELD_COPILOT", fontsize=7.2, fontname="Helvetica-Bold", color=DARK_TEXT)
+page5.insert_text((375, 248), "• Running natively on Snowflake Warehouse COMPUTE_WH", fontsize=7.2, fontname="Helvetica", color=MUTED_TEXT)
+page5.insert_text((375, 257), "• Powered by $400 AI Data Cloud Credits & Cortex AI llama3.1-8b", fontsize=7.2, fontname="Helvetica-Bold", color=ACCENT_GREEN)
 
-page5.insert_text((370, 298), "💻 Public GitHub Repository:", fontsize=8.8, fontname="Helvetica-Bold", color=SNOW_BLUE)
-page5.insert_text((375, 312), "https://github.com/Skrishnreddy/SnowShield-CoCo-Copilot", fontsize=8.2, fontname="Helvetica-Bold", color=DARK_TEXT)
-page5.insert_text((375, 323), "• Snowflake SQL DDL (SNOWSHIELD_DB.RISK_INTELLIGENCE)", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
-page5.insert_text((375, 333), "• CoCo CLI Skills Pack: risk-audit, compliance-guard, auto-remediation", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
-page5.insert_text((375, 343), "• Python AST validation & automated GitHub PR generator", fontsize=7.8, fontname="Helvetica", color=MUTED_TEXT)
+page5.insert_text((370, 272), "🌐 Live Deployed Public Web App:", fontsize=8.2, fontname="Helvetica-Bold", color=SNOW_BLUE)
+page5.insert_text((375, 283), "https://snowshield-coco-copilot-7djukbxfen2nzwtaaamnxm.streamlit.app/", fontsize=7.2, fontname="Helvetica-Bold", color=DARK_TEXT)
+page5.insert_text((375, 292), "• Interactive Risk Anomaly Inspector & Telemetry Analyzer", fontsize=7.2, fontname="Helvetica", color=MUTED_TEXT)
+page5.insert_text((375, 301), "• Regulatory Compliance Matrix & DevSecOps Auto-Fix", fontsize=7.2, fontname="Helvetica", color=MUTED_TEXT)
 
-page5.insert_text((370, 362), "👥 Team Information:", fontsize=8.8, fontname="Helvetica-Bold", color=DARK_BLUE)
-page5.insert_text((375, 373), "Team PandaShield | Lead: G. Sai Krishna Reddy | GCC Edition 2026", fontsize=7.8, fontname="Helvetica", color=DARK_TEXT)
+page5.insert_text((370, 316), "💻 Public GitHub Repository:", fontsize=8.2, fontname="Helvetica-Bold", color=SNOW_BLUE)
+page5.insert_text((375, 327), "https://github.com/Skrishnreddy/SnowShield-CoCo-Copilot", fontsize=7.5, fontname="Helvetica-Bold", color=DARK_TEXT)
+page5.insert_text((375, 337), "• Complete DDL, CoCo Skills Pack, and AST PR Generator", fontsize=7.2, fontname="Helvetica", color=MUTED_TEXT)
+
+page5.insert_text((370, 353), "👥 Team Information:", fontsize=8.2, fontname="Helvetica-Bold", color=DARK_BLUE)
+page5.insert_text((375, 363), "Team PandaShield | Lead: G. Sai Krishna Reddy | GCC Edition 2026", fontsize=7.2, fontname="Helvetica", color=DARK_TEXT)
+page5.insert_text((375, 372), "Account: CBC79236 (AWS us-east-1) | Live Snowflake AI Data Cloud", fontsize=7.2, fontname="Helvetica-Oblique", color=MUTED_TEXT)
 
 doc.save(output_pdf)
 print("SUCCESS: Generated complete submission PDF at:", output_pdf)
