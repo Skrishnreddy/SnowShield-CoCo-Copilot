@@ -4,3 +4,10 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+*.png
+!snowflake_logo.png
+*.wav
+*.aiff
+video_tmp/
+audio_scenes/
+scratch/
