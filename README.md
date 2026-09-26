@@ -113,14 +113,29 @@ pip install streamlit pandas snowflake-connector-python
 streamlit run streamlit_app.py
 ```
 
-### 3. Invoke CoCo CLI Skills
-```bash
-# Run risk audit via CoCo CLI
-coco run --skill coco_skills/risk_audit_skill "Audit recent critical exfiltration events in SNOWSHIELD_DB"
+### 3. Invoke CoCo CLI Skills (End-to-End Workflow)
+SnowShield provides a live CLI interface (`coco_cli.py` or executable `./coco`):
 
-# Run compliance check
-coco run --skill coco_skills/compliance_guard_skill "Validate PCI-DSS 4.0 compliance on RAW_STAGING.PAYMENTS"
+```bash
+# List all registered modular skills
+./coco list-skills
+
+# Skill 1: Risk & Fraud Audit (Input → Processing → Output)
+./coco run --skill risk-audit-skill "Analyze recent query telemetry for exfiltration risks in SNOWSHIELD_DB"
+
+# Skill 2: Regulatory Compliance Guard (Input → Processing → Output)
+./coco run --skill compliance-guard-skill "Check PCI-DSS 4.0 and GDPR compliance on RAW_STAGING.PAYMENTS"
+
+# Skill 3: Autonomous DevSecOps Remediation (Input → Processing → Output)
+./coco run --skill auto-remediation-skill "Remediate SQL injection in pipelines/ingest_transactions.py and raise GitHub PR"
 ```
+
+#### CoCo CLI Workflow Architecture:
+| Stage | Description | Snowflake AI Data Cloud Execution |
+| :--- | :--- | :--- |
+| **1. INPUT** | Natural language security prompt or automated CI/CD trigger specifying target skill | Local CoCo CLI agent reads declarative `SKILL.md` manifest |
+| **2. PROCESSING** | Multi-step audit: telemetry scan, schema rule matching & AST parsing | Queries `SNOWSHIELD_DB` tables & calls Cortex LLM (`llama3.1-8b`) on `COMPUTE_WH` |
+| **3. OUTPUT** | Formatted executive threat report, compliant DDM SQL policy, or verified GitHub PR | Real-time mitigation: role quarantine, DDM policy execution, and zero-hallucination PR |
 
 ---
 

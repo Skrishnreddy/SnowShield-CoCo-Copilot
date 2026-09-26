@@ -1,0 +1,11 @@
+#!/bin/bash
+# SnowShield CoCo CLI executable wrapper
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+if [ -f "$DIR/../venv/bin/python" ]; then
+    PYTHON_BIN="$DIR/../venv/bin/python"
+elif command -v python3 &>/dev/null; then
+    PYTHON_BIN="python3"
+else
+    PYTHON_BIN="python"
+fi
+exec "$PYTHON_BIN" "$DIR/coco_cli.py" "$@"
